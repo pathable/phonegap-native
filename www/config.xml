@@ -6,10 +6,10 @@
         id        = "com.pathable.phonegap"
         version   = "1.0.0">
 
-    <name>TriggerConv</name>
+    <name>PathableGC 2015 PhoneGap</name>
 
     <description>
-        Phonegap application that convert from Trigger.io to Phonegap.
+        Model for Pathable Phonegap apps.
     </description>
 
     <author href="https://pathable.com/" email="support@pathable.com">
