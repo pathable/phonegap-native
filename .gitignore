@@ -3,7 +3,6 @@
 .cordova
 hooks
 merges
-platforms
 config.xml
 bower.json
 gulpfile.js
