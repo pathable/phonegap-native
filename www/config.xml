@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.helloworld"
+        id        = "com.pathable.phonegap"
         version   = "1.0.0">
 
     <name>TriggerConv</name>
@@ -12,8 +12,8 @@
         Phonegap application that convert from Trigger.io to Phonegap.
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        Alex B
+    <author href="https://pathable.com/" email="support@pathable.com">
+        Pathable
     </author>
 
     <!-- Define the main entry-point to the application -->
