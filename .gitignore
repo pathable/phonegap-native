@@ -1,15 +1,3 @@
-
-#Hide everything but www - really unsure of this...
-.cordova
-hooks
-merges
-config.xml
-bower.json
-gulpfile.js
-ionic.project
-package.json
-scss
-.bowerrc
-.brackets.json
+# OS X
 .DS_Store
 /nbproject/private/

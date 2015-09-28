@@ -1,71 +1,71 @@
-Convert Trigger.io to PhoneGap
-====================
+# Convert Trigger.io to PhoneGap
 
-This repository is to build a PhoneGap project in PhoneGap Build that generates native iOS and Android builds of one of special sites, and do it in a way where we can take the project files, replace them with the mobile web URLs of our other sites, and generate similar apps on an ongoing basis. 
+> This project is converted from Trigger.io to Phonegap
 
+## Usage
 
-Installation
-------------
+### Desktop
 
-### Dependencies
+In your browser, open the file:
 
-```
-$ bundle install
-$ npm install -g cordova@4.3.0
-$ npm install -g appium
-$ npm install -g ios-sim
-$ npm install
-```
+    /www/index.html
 
-### Configuration
+### PhoneGap CLI
 
-```
-$ cp config.sample.xml config.xml
-```
+This repository is automatically downloaded by [phonegap-cli][phonegap-cli-url]
+when you create a new application.
 
-### Platforms
+### PhoneGap Build
 
-You'll need to install the JRE/JDK to build android. I installed `jre-8u40-macosx-x64.dmg` and `jdk-8u40-macosx-x64.dmg`.
+Create a new app with the following repository:
 
-Assuming you have OSX and Homebrew installed, you can install the Android SDK (needed in order to add the platform) pretty easily with:
+    https://github.com/pathable/native-phonegap-bak
 
-```
-$ brew install android-sdk
-```
+### Nitrous.io
 
-You should add something similar to the following to your `.bash_profile`:
+First [setup nitrous.io][nitrous-url] to use this project.
 
-```
-export ANDROID_HOME="/usr/local/Cellar/android-sdk/24.0.2"
-export PATH=$PATH:$ANDROID_HOME/bin
-export JAVA_HOME=$(/usr/libexec/java_home)
-```
+Then run the following commands in the nitrous.io terminal:
 
-Then run the android tool to install the SDK.
+    $ cd ~/TriggerConv
+    $ npm install -g phonegap
+    $ phonegap remote build android
 
-```
-$ android
-```
+The last command requires an Adobe ID and will build your app on PhoneGap Build.
 
-Install the following:
+## Contributors
 
-1. "SDK Platform" for android-21
-2. "Android SDK Platform-tools (latest)
-3. "Android SDK Build-tools" (latest)]
+### Updating the Application
 
-You also need to install ant to run the Android build (`brew install ant`).
+The application is based on the [Apache Cordova Hello World][cordova-app] app.
 
-After that (and also assuming you're on OSX) then you can add the iOS and Android platforms as such:
+#### 1. Update the Source
 
-```
-$ cordova platform add ios
-$ cordova platform add android
-```
+    cp cordova-app-hello-world/www www/
 
-After adding the iOS platform, you'll want to set up the code signing. Open the XCode project (`open platforms/ios/<project name>.xcodeproj`) and pick your provisioning profile, etc. You'll only need to do this once.
+__Do not replace `www/config.xml`.__
 
+__Do not replace `www/img/logo.png`.__
 
-Copyright
----------
+#### 2. Update index.html
 
-Copyright (c) 2015 Alexander B.
+Replace `<h1>Apache Cordova</h1>` with `<h1>PhoneGap</h1>`.
+
+#### 3. Update PhoneGap Version
+
+    <preference name="phonegap-version" value="x.x.x" />
+
+#### 4. Commit
+
+    $ git commit -am "Version x.x.x"
+
+#### 5. Tag
+
+    $ git tag x.x.x
+
+[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
+[cordova-app]: http://github.com/apache/cordova-app-hello-world
+[nitrous-url]: https://www.nitrous.io/hack_button?source=embed&runtime=nodejs&repo=phonegap%2Fphonegap-start&file_to_open=README.md
+[bithound-img]: https://www.bithound.io/github/phonegap/phonegap-start/badges/score.svg
+[bithound-url]: https://www.bithound.io/github/phonegap/phonegap-start
+
