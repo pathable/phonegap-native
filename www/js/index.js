@@ -88,7 +88,6 @@ var app = {
                     break;
                 case 'bar-codes/new':
                     alert('scan');
-                    if(cordova){
                         cordova.plugins.barcodeScanner.scan(function (result) { 
 
                             alert("We got a barcode\n" + 
@@ -111,7 +110,6 @@ var app = {
                         }, function (error) { 
                             console.log("Scanning failed: ", error); 
                         } );
-                    }
                     break;
             };
         });
