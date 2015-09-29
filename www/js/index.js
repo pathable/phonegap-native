@@ -87,25 +87,30 @@ var app = {
                 case 'push-registration/badge-clear':
                     break;
                 case 'bar-codes/new':
-                    alert('scan');
-                        cordova.plugins.barcodeScanner.scan(function (result) { 
+                    cordova.plugins.barcodeScanner.scan(function (result) { 
+                        alert(result.text);
 
-                            alert("We got a barcode\n" + 
-                            "Result: " + result.text + "\n" + 
-                            "Format: " + result.format + "\n" + 
-                            "Cancelled: " + result.cancelled);  
+                        var value = btoa(result.text);
+                        var organization_id = data.organization_id; // to create leads when user scans org
+                        var user_id = data.user_id; // to create lead when organization scans user
+                        var group_id = data.group_id; // communities or meetings, check in applied to memberships
 
-                           console.log("Scanner result: \n" +
-                                "text: " + result.text + "\n" +
-                                "format: " + result.format + "\n" +
-                                "cancelled: " + result.cancelled + "\n");
-                            alert(result.text);
-                            console.log(result);
+                        if (organization_id) {
+                          route = 'organizations/' + organization_id + '/bar-codes/' + value;
+                        } else if (user_id) {
+                          route = 'users/' + user_id + '/bar-codes/' + value;
+                        } else if (group_id) {
+                          route = 'groups/' + group_id + '/bar-codes/' + value;
+                        } else {
+                          route = 'bar-codes/' + value
+                        };
 
-                        }, function (error) { 
-                            console.log("Scanning failed: ", error); 
-                        } );
-                    break;
+                        app.postMessage({route: route}, '*');
+
+                    }, function (error) { 
+                        console.log("Scanning failed: ", error); 
+                    } );
+                break;
             };
         });
     },
