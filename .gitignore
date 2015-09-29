@@ -1,3 +1,5 @@
 # OS X
 .DS_Store
-/nbproject/private/
+/nbproject/private
+/plugins
+/platforms/
