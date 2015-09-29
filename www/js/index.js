@@ -17,7 +17,7 @@ var app = {
     // function, we must explicity call `app.receivedEvent(...);`
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        app.initPushwoosh();
+//        app.initPushwoosh();
         app.loadPage();
     },
 
@@ -73,16 +73,16 @@ var app = {
                     var url = data.url;
                     break;
                 case 'push-registration':
-                    var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
-                    pushNotification.registerDevice(
-                        function(status) {
-                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
-                            app.postMessage({route: route}, '*');
-                        },
-                        function(status) {
-                            console.warn(JSON.stringify(['failed to register ', status]));
-                        }
-                    );
+//                    var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+//                    pushNotification.registerDevice(
+//                        function(status) {
+//                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
+//                            app.postMessage({route: route}, '*');
+//                        },
+//                        function(status) {
+//                            console.warn(JSON.stringify(['failed to register ', status]));
+//                        }
+//                    );
                     break;
                 case 'push-registration/badge-clear':
                     break;
