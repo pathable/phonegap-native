@@ -17,6 +17,7 @@ var app = {
     // function, we must explicity call `app.receivedEvent(...);`
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        app.initPushwoosh();
         app.loadPage();
     },
 
@@ -29,11 +30,32 @@ var app = {
 
     },
     
+    initPushwoosh : function(){
+        var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+ 
+    //set push notifications handler
+        document.addEventListener('push-notification', function(event) {
+            var title = event.notification.title;
+            var userData = event.notification.userdata;
+            alert(JSON.stringify(event.notification));
+            if(typeof(userData) != "undefined") {
+                console.warn('user data: ' + JSON.stringify(userData));
+            }
+
+            alert(title);
+        });
+
+        //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
+        pushNotification.onDeviceReady({ projectid: "602871635283", pw_appid : "222ED-BED0C" });
+
+    },
+    
     loadPage: function() {
         var $window = $(window);
         var $app = $('#application');
         var app = $app[0].contentWindow;
-        var a = document.createElement('a');   
+        var a = document.createElement('a');
+        
 
         $window.on("message", function (e) {
             var data = e.originalEvent.data;
@@ -51,6 +73,16 @@ var app = {
                     var url = data.url;
                     break;
                 case 'push-registration':
+                    var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+                    pushNotification.registerDevice(
+                        function(status) {
+                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
+                            app.postMessage({route: route}, '*');
+                        },
+                        function(status) {
+                            console.warn(JSON.stringify(['failed to register ', status]));
+                        }
+                    );
                     break;
                 case 'push-registration/badge-clear':
                     break;
