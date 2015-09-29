@@ -1,4 +1,5 @@
 var app = {
+    pushNotification:null,
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -17,7 +18,8 @@ var app = {
     // function, we must explicity call `app.receivedEvent(...);`
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-//        app.initPushwoosh();
+        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+        app.initPushwoosh();
         app.loadPage();
     },
 
@@ -31,7 +33,6 @@ var app = {
     },
     
     initPushwoosh : function(){
-        var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
  
     //set push notifications handler
         document.addEventListener('push-notification', function(event) {
@@ -46,7 +47,7 @@ var app = {
         });
 
         //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
-        pushNotification.onDeviceReady({ projectid: "602871635283", pw_appid : "222ED-BED0C" });
+        app.pushNotification.onDeviceReady({ projectid: "602871635283", pw_appid : "222ED-BED0C" });
 
     },
     
@@ -63,6 +64,9 @@ var app = {
                 case 'reload':
                     $window.scrollTop(0)
                     app.location.reload(true);
+                    if (app.pushNotification) {
+                      app.pushNotification = null;
+                    };
                     break;
                 case 'scrollTop':
                     $window.scrollTop(0);
@@ -73,22 +77,22 @@ var app = {
                     var url = data.url;
                     break;
                 case 'push-registration':
-//                    var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
-//                    pushNotification.registerDevice(
-//                        function(status) {
-//                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
-//                            app.postMessage({route: route}, '*');
-//                        },
-//                        function(status) {
-//                            console.warn(JSON.stringify(['failed to register ', status]));
-//                        }
-//                    );
+                    
+                    app.pushNotification.registerDevice(
+                        function(status) {
+                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
+                            app.postMessage({route: route}, '*');
+                        },
+                        function(status) {
+                            console.warn(JSON.stringify(['failed to register ', status]));
+                        }
+                    );
                     break;
                 case 'push-registration/badge-clear':
+                    app.pushNotification.setApplicationIconBadgeNumber(0);
                     break;
                 case 'bar-codes/new':
                     cordova.plugins.barcodeScanner.scan(function (result) { 
-                        alert(result.text);
 
                         var value = btoa(result.text);
                         var organization_id = data.organization_id; // to create leads when user scans org

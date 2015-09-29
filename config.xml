@@ -61,9 +61,12 @@
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
+    <!-- Pushwoosh plugin -->
+    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
     <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <access origin="*.pushwoosh.com"/>
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
