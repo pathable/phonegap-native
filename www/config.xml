@@ -57,7 +57,6 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
-    <gap:plugin name="com.manateeworks.barcodescanner" version="1.6.1" />
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
