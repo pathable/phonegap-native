@@ -70,7 +70,7 @@
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
-    <plugin name="com.phonegap.plugins.barcodescanner" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
