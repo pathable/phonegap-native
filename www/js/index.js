@@ -80,6 +80,7 @@ var app = {
                     
                     app.pushNotification.registerDevice(
                         function(status) {
+                            alert(JSON.stringify(status));
                             var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
                             app.postMessage({route: route}, '*');
                         },
