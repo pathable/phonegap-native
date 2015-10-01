@@ -33,6 +33,11 @@
     <preference name="StatusBarOverlaysWebView" value="false"/>
     <preference name="StatusBarBackgroundColor" value="#000000"/>
     <preference name="StatusBarStyle" value="blackopaque" />
+    <preference name="SplashScreen" value="www/assets/launch-768x1024.png" />
+    <preference name="FadeSplashScreen" value="true"/>
+    <preference name="FadeSplashScreenDuration" value="4"/>
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <preference name="AutoHideSplashScreen" value="false" />
     
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.console" />
@@ -40,7 +45,7 @@
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.network-information" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
     <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
