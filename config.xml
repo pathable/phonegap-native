@@ -65,6 +65,7 @@
     <!-- Pushwoosh plugin -->
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
     <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <access origin="*.pushwoosh.com"/>
