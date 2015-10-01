@@ -2,6 +2,7 @@ var app = {
     pushNotification:null,
     // Application Constructor
     initialize: function() {
+        navigator.splashscreen.show();
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -128,6 +129,8 @@ var app = {
     },
     onLoadHandler: function () {
         $('#loading-container').addClass('hidden');
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 2000);
     }
-
 };
