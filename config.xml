@@ -26,6 +26,7 @@
     <preference name="android-minSdkVersion" value="10" />
     <preference name="android-maxSdkVersion" value="22" />
     <preference name="android-targetSdkVersion" value="17" />
+    <preference name="DisallowOverscroll" value="true" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.device" />
