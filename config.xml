@@ -12,12 +12,11 @@
     <content src="index.html" />
     
     <preference name="phonegap-version" value="cli-5.2.0" />
-    <preference name="orientation" value="default" />
+    <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
+    <preference name="webviewbounce" value="false" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
@@ -33,7 +32,7 @@
     <preference name="StatusBarOverlaysWebView" value="false"/>
     <preference name="StatusBarBackgroundColor" value="#000000"/>
     <preference name="StatusBarStyle" value="blackopaque" />
-    <preference name="SplashScreen" value="www/assets/launch-768x1024.png" />
+    <preference name="SplashScreen" value="www/res/screen/ios/Default@2x.png" />
     <preference name="FadeSplashScreen" value="true"/>
     <preference name="FadeSplashScreenDuration" value="4"/>
     <preference name="ShowSplashScreenSpinner" value="true"/>
