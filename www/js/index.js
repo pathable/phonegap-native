@@ -82,7 +82,7 @@ var app = {
                     break;
                 case 'open-url':
                     var url = data.url;
-                    var inapp = cordova.InAppBrowser.open(url, '_blank', 'location=yes', 'toolbarposition=top', 'closebuttoncaption=Close');
+                    var inapp = cordova.InAppBrowser.open(url, '_blank', 'location=yes,toolbarposition=top,closebuttoncaption=Close');
 //                    window.open = cordova.ThemeableBrowser.open();
                     break;
                 case 'push-registration':
