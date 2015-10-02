@@ -18,7 +18,7 @@ var app = {
     // The scope of `this` is the event. In order to call the `receivedEvent`
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+//        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 //        app.initPushwoosh();
         app.loadPage();
     },
