@@ -28,6 +28,14 @@
     <preference name="android-targetSdkVersion" value="17" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
+    <preference name="StatusBarStyle" value="blackopaque" />
+    <preference name="SplashScreen" value="www/res/screen/ios/Default@2x.png" />
+    <preference name="FadeSplashScreen" value="true"/>
+    <preference name="FadeSplashScreenDuration" value="4"/>
+    <preference name="ShowSplashScreenSpinner" value="true"/>
+    <preference name="AutoHideSplashScreen" value="false" />
+    
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.device" />
