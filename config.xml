@@ -72,7 +72,7 @@
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <!-- Pushwoosh plugin -->
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
-    <gap:plugin name="phonegap-plugin-barcodescanner" version="2.2.0" />
+    <gap:plugin name="phonegap-plugin-barcodescanner" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <access origin="*.pushwoosh.com"/>
