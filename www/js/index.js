@@ -102,6 +102,7 @@ var app = {
                     app.pushNotification.setApplicationIconBadgeNumber(0);
                     break;
                 case 'bar-codes/new':
+                    alert('scan?');
                     cordova.plugins.barcodeScanner.scan(function (result) { 
                         var value = btoa(result.text);
                         var organization_id = data.organization_id; // to create leads when user scans org
