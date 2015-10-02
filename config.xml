@@ -38,13 +38,11 @@
     <preference name="ShowSplashScreenSpinner" value="true"/>
     <preference name="AutoHideSplashScreen" value="false" />
     
-    <gap:plugin name="org.apache.cordova.camera" />
-    <gap:plugin name="org.apache.cordova.console" />
-    <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.dialogs" />
-    <gap:plugin name="org.apache.cordova.file" />
-    <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+    <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
+    
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
@@ -74,10 +72,7 @@
     <splash gap:platform="ios" height="2008" src="www/res/screen/ios/launch-1536x2008.png" width="1536" />
     <splash gap:platform="ios" height="2208" src="www/res/screen/ios/launch-1242x2208.png" width="1242" />
     <access origin="*" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
-    <!-- Pushwoosh plugin -->
-    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
-    <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
+    
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <!--<access origin="*.pushwoosh.com"/>-->
