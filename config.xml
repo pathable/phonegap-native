@@ -46,7 +46,7 @@
 
     <icon src="icon.png" />
     
-    <icon gap:platform="ios" height="57" src="www/res/icon/ios/Icon.png" width="57" />
+    <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon.png" width="57" />
     <icon gap:platform="ios" height="114" src="www/res/icon/ios/icon@2x.png" width="114" />
     <icon gap:platform="ios" height="72" src="www/res/icon/ios/icon-72.png" width="72" />
     <icon gap:platform="ios" height="120" src="www/res/icon/ios/icon-120.png" width="120" />
