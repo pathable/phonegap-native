@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pathable.phonegap" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PathableGC 2015 PhoneGap</name>
+<widget id="com.pathable.phonegap" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PhoneGap PGC2015</name>
     <description>
-        Model for Pathable Phonegap apps.
+        Pathable PhoneGap
     </description>
     <author email="support@pathable.com" href="https://pathable.com/">
         Pathable
