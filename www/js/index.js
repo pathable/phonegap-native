@@ -2,7 +2,7 @@ var app = {
     pushNotification:null,
     // Application Constructor
     initialize: function() {
-        navigator.splashscreen.show();
+//        navigator.splashscreen.show();
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -102,7 +102,6 @@ var app = {
                     app.pushNotification.setApplicationIconBadgeNumber(0);
                     break;
                 case 'bar-codes/new':
-                    alert('scan?');
                     cordova.plugins.barcodeScanner.scan(function (result) { 
                         var value = btoa(result.text);
                         var organization_id = data.organization_id; // to create leads when user scans org
@@ -130,8 +129,8 @@ var app = {
     },
     onLoadHandler: function () {
         $('#loading-container').addClass('hidden');
-        setTimeout(function() {
-            navigator.splashscreen.hide();
-        }, 2000);
+//        setTimeout(function() {
+//            navigator.splashscreen.hide();
+//        }, 2000);
     }
 };

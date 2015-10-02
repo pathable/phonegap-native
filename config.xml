@@ -75,11 +75,14 @@
     <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    <access origin="*.pushwoosh.com"/>
+    <!--<access origin="*.pushwoosh.com"/>-->
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
