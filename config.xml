@@ -44,7 +44,7 @@
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
     <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
     
-    <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
+    <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon.png" width="57" />
     <icon gap:platform="ios" height="72" src="www/res/icon/ios/icon-72.png" width="72" />
     <icon gap:platform="ios" height="120" src="www/res/icon/ios/icon-120.png" width="120" />
     <icon gap:platform="ios" height="144" src="www/res/icon/ios/icon-144.png" width="144" />
@@ -52,7 +52,7 @@
     <icon gap:platform="ios" height="180" src="www/res/icon/ios/icon-180.png" width="180" />
     <icon gap:platform="ios" height="76" src="www/res/icon/ios/icon-76.png" width="76" />
     <icon gap:platform="ios" height="60" src="www/res/icon/ios/icon-60.png" width="60" />
-    <icon gap:platform="ios" height="114" src="www/res/icon/ios/icon-114.png" width="114" />
+    <icon gap:platform="ios" height="114" src="www/res/icon/ios/icon@2x.png" width="114" />
         
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
