@@ -38,7 +38,7 @@
     <preference name="ShowSplashScreenSpinner" value="true"/>
     <preference name="AutoHideSplashScreen" value="false" />
     
-    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
