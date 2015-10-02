@@ -2,7 +2,7 @@ var app = {
     pushNotification:null,
     // Application Constructor
     initialize: function() {
-//        navigator.splashscreen.show();
+        navigator.splashscreen.show();
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -18,8 +18,8 @@ var app = {
     // The scope of `this` is the event. In order to call the `receivedEvent`
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-//        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
-//        app.initPushwoosh();
+        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+        app.initPushwoosh();
         app.loadPage();
     },
 
@@ -87,15 +87,15 @@ var app = {
                     break;
                 case 'push-registration':
                     
-//                    app.pushNotification.registerDevice(
-//                        function(status) {
-//                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
-//                            app.postMessage({route: route}, '*');
-//                        },
-//                        function(status) {
-//                            console.warn(JSON.stringify(['failed to register ', status]));
-//                        }
-//                    );
+                    app.pushNotification.registerDevice(
+                        function(status) {
+                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
+                            app.postMessage({route: route}, '*');
+                        },
+                        function(status) {
+                            console.warn(JSON.stringify(['failed to register ', status]));
+                        }
+                    );
                     break;
                 case 'push-registration/badge-clear':
                     app.pushNotification.setApplicationIconBadgeNumber(0);
@@ -128,8 +128,8 @@ var app = {
     },
     onLoadHandler: function () {
         $('#loading-container').addClass('hidden');
-//        setTimeout(function() {
-//            navigator.splashscreen.hide();
-//        }, 2000);
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 2000);
     }
 };
