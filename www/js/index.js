@@ -129,6 +129,7 @@ var app = {
     onLoadHandler: function () {
         $('#loading-container').addClass('hidden');
         setTimeout(function() {
+            app.loadPage();
             navigator.splashscreen.hide();
         }, 2000);
     }
