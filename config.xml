@@ -58,12 +58,19 @@
     <splash gap:platform="android" gap:qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
     <splash gap:platform="android" gap:qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
     <splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
-    <splash gap:platform="ios" height="480" src="www/assets/launch-320x480.png" width="320" />
-    <splash gap:platform="ios" height="960" src="www/assets/launch-640x960.png" width="640" />
-    <splash gap:platform="ios" height="1136" src="www/assets/launch-640x1136.png" width="640" />
-    <splash gap:platform="ios" height="768" src="www/assets/launch-1024x768.png" width="1024" />
-    <splash gap:platform="ios" height="1024" src="www/assets/launch-768x1024.png" width="768" />
-    <splash gap:platform="ios" height="1334" src="www/assets/launch-750x1334.png" width="750" />
+    <splash gap:platform="ios" height="480" src="www/res/screen/ios/launch-320x480.png" width="320" />
+    <splash gap:platform="ios" height="960" src="www/res/screen/ios/launch-640x960.png" width="640" />
+    <splash gap:platform="ios" height="1136" src="www/res/screen/ios/launch-640x1136.png" width="640" />
+    <splash gap:platform="ios" height="768" src="www/res/screen/ios/launch-1024x768.png" width="1024" />
+    <splash gap:platform="ios" height="1024" src="www/res/screen/ios/launch-768x1024.png" width="768" />
+    <splash gap:platform="ios" height="1334" src="www/res/screen/ios/launch-750x1334.png" width="750" />
+    <splash gap:platform="ios" height="2048" src="www/res/screen/ios/launch-1536x2048.png" width="1536" />
+    <splash gap:platform="ios" height="1536" src="www/res/screen/ios/launch-2048x1536.png" width="2048" />
+    <splash gap:platform="ios" height="1004" src="www/res/screen/ios/launch-768x1004.png" width="768" />
+    <splash gap:platform="ios" height="960" src="www/res/screen/ios/launch-640x960.png" width="640" />
+    <splash gap:platform="ios" height="1496" src="www/res/screen/ios/launch-2048x1496.png" width="2048" />
+    <splash gap:platform="ios" height="2008" src="www/res/screen/ios/launch-1536x2008.png" width="1536" />
+    <splash gap:platform="ios" height="2208" src="www/res/screen/ios/launch-1242x2208.png" width="1242" />
     <access origin="*" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <!-- Pushwoosh plugin -->
