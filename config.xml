@@ -43,9 +43,7 @@
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
     <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
-    
-    <icon src="icon.png" />
-    
+        
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
     <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
