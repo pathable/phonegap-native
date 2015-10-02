@@ -84,6 +84,8 @@ var app = {
                     break;
                 case 'open-url':
                     var url = data.url;
+                    var ref = cordova.InAppBrowser.open(url, '_blank', 'location=yes');
+                    window.open = cordova.InAppBrowser.open;
                     break;
                 case 'push-registration':
                     
