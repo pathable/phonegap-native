@@ -83,17 +83,6 @@ var app = {
                 case 'open-url':
                     var url = data.url;
                     cordova.ThemeableBrowser.open(url, '_blank', {
-                        statusbar: {
-                            color: '#ffffffff'
-                        },
-                        toolbar: {
-                            height: 44,
-                            color: '#f0f0f0ff'
-                        },
-                        title: {
-                            color: '#003264ff',
-                            showPageTitle: true
-                        },
                         backButton: {
                             image: 'back',
                             imagePressed: 'back_pressed',
@@ -112,31 +101,7 @@ var app = {
                             align: 'left',
                             event: 'closePressed'
                         },
-                        customButtons: [
-                            {
-                                image: 'share',
-                                imagePressed: 'share_pressed',
-                                align: 'right',
-                                event: 'sharePressed'
-                            }
-                        ],
-                        menu: {
-                            image: 'menu',
-                            imagePressed: 'menu_pressed',
-                            title: 'Test',
-                            cancel: 'Cancel',
-                            align: 'right',
-                            items: [
-                                {
-                                    event: 'helloPressed',
-                                    label: 'Hello World!'
-                                },
-                                {
-                                    event: 'testPressed',
-                                    label: 'Test!'
-                                }
-                            ]
-                        },
+                        
                         backButtonCanClose: true
                     }).addEventListener('backPressed', function (e) {
                         alert('back pressed');
@@ -149,7 +114,7 @@ var app = {
                     }).addEventListener(cordova.ThemeableBrowser.EVT_WRN, function (e) {
                         console.log(e.message);
                     });
-                    window.open = cordova.ThemeableBrowser.open();
+//                    window.open = cordova.ThemeableBrowser.open();
                     break;
                 case 'push-registration':
 
