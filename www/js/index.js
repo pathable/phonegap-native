@@ -87,15 +87,15 @@ var app = {
                     break;
                 case 'push-registration':
                     
-                    app.pushNotification.registerDevice(
-                        function(status) {
-                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
-                            app.postMessage({route: route}, '*');
-                        },
-                        function(status) {
-                            console.warn(JSON.stringify(['failed to register ', status]));
-                        }
-                    );
+//                    app.pushNotification.registerDevice(
+//                        function(status) {
+//                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
+//                            app.postMessage({route: route}, '*');
+//                        },
+//                        function(status) {
+//                            console.warn(JSON.stringify(['failed to register ', status]));
+//                        }
+//                    );
                     break;
                 case 'push-registration/badge-clear':
                     app.pushNotification.setApplicationIconBadgeNumber(0);
