@@ -47,7 +47,7 @@
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="0.3.4" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
-    <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" source="npm" version="2.2.0" />
     <gap:plugin name="cordova-plugin-statusbar" source="npm" />
     
     <icon src="www/icon.png" />
