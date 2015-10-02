@@ -82,38 +82,7 @@ var app = {
                     break;
                 case 'open-url':
                     var url = data.url;
-                    cordova.ThemeableBrowser.open(url, '_blank', {
-                        backButton: {
-                            image: 'back',
-                            imagePressed: 'back_pressed',
-                            align: 'left',
-                            event: 'backPressed'
-                        },
-                        forwardButton: {
-                            image: 'forward',
-                            imagePressed: 'forward_pressed',
-                            align: 'left',
-                            event: 'forwardPressed'
-                        },
-                        closeButton: {
-                            image: 'close',
-                            imagePressed: 'close_pressed',
-                            align: 'left',
-                            event: 'closePressed'
-                        },
-                        
-                        backButtonCanClose: true
-                    }).addEventListener('backPressed', function (e) {
-                        alert('back pressed');
-                    }).addEventListener('helloPressed', function (e) {
-                        alert('hello pressed');
-                    }).addEventListener('sharePressed', function (e) {
-                        alert(e.url);
-                    }).addEventListener(cordova.ThemeableBrowser.EVT_ERR, function (e) {
-                        console.error(e.message);
-                    }).addEventListener(cordova.ThemeableBrowser.EVT_WRN, function (e) {
-                        console.log(e.message);
-                    });
+                    var inapp = cordova.InAppBrowser.open(url, '_blank', 'location=yes');
 //                    window.open = cordova.ThemeableBrowser.open();
                     break;
                 case 'push-registration':
