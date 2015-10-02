@@ -30,7 +30,8 @@
     <preference name="StatusBarOverlaysWebView" value="true"/>
     <preference name="StatusBarBackgroundColor" value="#000000"/>
     <preference name="StatusBarStyle" value="blackopaque" />
-    <preference name="SplashScreen" value="www/res/screen/ios/Default@2x.png" />
+    <preference name="SplashScreen" value="www/res/screen/ios/launch-1242x2208.png" />
+    <preference name="SplashScreenDelay" value="5000" />
     <preference name="FadeSplashScreen" value="true"/>
     <preference name="FadeSplashScreenDuration" value="4"/>
     <preference name="ShowSplashScreenSpinner" value="true"/>
