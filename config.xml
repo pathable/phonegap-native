@@ -62,13 +62,14 @@
     <splash gap:platform="ios" height="768" src="www/res/screen/ios/launch-1024x768.png" width="1024" />
     <splash gap:platform="ios" height="1024" src="www/res/screen/ios/launch-768x1024.png" width="768" />
     <splash gap:platform="ios" height="1334" src="www/res/screen/ios/launch-750x1334.png" width="750" />
+    <splash gap:platform="ios" height="750" src="www/res/screen/ios/launch-1334x750.png" width="1334" />
     <splash gap:platform="ios" height="2048" src="www/res/screen/ios/launch-1536x2048.png" width="1536" />
     <splash gap:platform="ios" height="1536" src="www/res/screen/ios/launch-2048x1536.png" width="2048" />
     <splash gap:platform="ios" height="1004" src="www/res/screen/ios/launch-768x1004.png" width="768" />
-    <splash gap:platform="ios" height="960" src="www/res/screen/ios/launch-640x960.png" width="640" />
     <splash gap:platform="ios" height="1496" src="www/res/screen/ios/launch-2048x1496.png" width="2048" />
     <splash gap:platform="ios" height="2008" src="www/res/screen/ios/launch-1536x2008.png" width="1536" />
     <splash gap:platform="ios" height="2208" src="www/res/screen/ios/launch-1242x2208.png" width="1242" />
+    <splash gap:platform="ios" height="1242" src="www/res/screen/ios/launch-2208x1242.png" width="2208" />
         
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
