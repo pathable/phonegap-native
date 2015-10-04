@@ -41,7 +41,7 @@
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
-    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" version="3.6.10" />
     <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
 
     <icon src="icon.png" />
@@ -54,6 +54,7 @@
     <icon gap:platform="ios" src="icon-152.png" width="152" height="152" />
     <icon gap:platform="ios" src="icon-180.png" width="180" height="180" />
     <icon gap:platform="ios" src="icon-76.png" width="76" height="76" />
+<<<<<<< HEAD
     <icon gap:platform="ios" src="icon-60.png" width="60" height="60" />    
     
     <splash gap:platform="ios" height="480" src="www/res/screen/ios/launch-320x480.png" width="320" />
@@ -80,6 +81,33 @@
     <splash gap:platform="android" gap:qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
     <splash gap:platform="android" gap:qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
     <splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+=======
+    <icon gap:platform="ios" src="icon-60.png" width="60" height="60" />
+        
+    <icon gap:platform="android" gap:qualifier="ldpi" src="icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="icon-96-xhdpi.png" />
+    
+    <splash gap:platform="android" gap:qualifier="port-ldpi" src="screen-ldpi-portrait.png" />
+    <splash gap:platform="android" gap:qualifier="port-mdpi" src="screen-mdpi-portrait.png" />
+    <splash gap:platform="android" gap:qualifier="port-hdpi" src="screen-hdpi-portrait.png" />
+    <splash gap:platform="android" gap:qualifier="port-xhdpi" src="screen-xhdpi-portrait.png" />
+    
+    <splash gap:platform="ios" height="480" src="launch-320x480.png" width="320" />
+    <splash gap:platform="ios" height="960" src="launch-640x960.png" width="640" />
+    <splash gap:platform="ios" height="1136" src="launch-640x1136.png" width="640" />
+    <splash gap:platform="ios" height="768" src="launch-1024x768.png" width="1024" />
+    <splash gap:platform="ios" height="1024" src="launch-768x1024.png" width="768" />
+    <splash gap:platform="ios" height="1334" src="launch-750x1334.png" width="750" />
+    <splash gap:platform="ios" height="2048" src="launch-1536x2048.png" width="1536" />
+    <splash gap:platform="ios" height="1536" src="launch-2048x1536.png" width="2048" />
+    <splash gap:platform="ios" height="1004" src="launch-768x1004.png" width="768" />
+    <splash gap:platform="ios" height="960" src="launch-640x960.png" width="640" />
+    <splash gap:platform="ios" height="1496" src="launch-2048x1496.png" width="2048" />
+    <splash gap:platform="ios" height="2008" src="launch-1536x2008.png" width="1536" />
+    <splash gap:platform="ios" height="2208" src="launch-1242x2208.png" width="1242" />
+>>>>>>> Splash screen and push
     
     <access origin="*" />
     
