@@ -84,11 +84,11 @@
     <gap:splash src="Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
     <gap:splash src="Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
 
-    <gap:splash src="Icon-36.png" gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="Icon-48.png" gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="Icon-72.png" gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="Icon-96.png" gap:platform="android" gap:density="xhdpi" />
-    <gap:splash src="Icon-144.png" gap:platform="android" gap:density="xxhdpi" />
+    <gap:splash src="icon-36.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="icon-48.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="icon-72.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="icon-96.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="icon-144.png" gap:platform="android" gap:density="xxhdpi" />
     
     <access origin="*" />
     
