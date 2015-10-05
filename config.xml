@@ -62,10 +62,10 @@
     <icon gap:platform="ios" src="icon-76.png" width="76" height="76" />
     <icon gap:platform="ios" src="icon-60.png" width="60" height="60" />
         
-    <icon gap:platform="android" gap:qualifier="ldpi" src="icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="icon-96-xhdpi.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="icon-36.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="icon-48.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="icon-72.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="icon-96.png" />
 
     <gap:splash src="splash.png" />
 
