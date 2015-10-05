@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pathable.phonegap" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PhoneGap Test PGC2015</name>
+<widget id="com.pathable.wssda" version="1.5.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>WSSDA 15 Annual Conference</name>
     <description>
-        Pathable PhoneGap
+        Official event app for the WSSDA 2015 Annual Conference
     </description>
     <author email="support@pathable.com" href="https://pathable.com/">
         Pathable
