@@ -38,7 +38,7 @@
     <preference name="ShowSplashScreenSpinner" value="true"/>
     <preference name="AutoHideSplashScreen" value="false" />
     
-    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="3.0.0-dev" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
@@ -79,6 +79,10 @@
     <!-- Retina iPad -->
     <gap:splash src="Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
     <gap:splash src="Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
+
+    <!-- iPhone 6 / 6 Plus -->
+    <gap:splash src="splash-750-1334.png" gap:platform="ios" width="750" height="1334" />
+    <gap:splash src="splash-1242-2208.png" gap:platform="ios" width="1242" height="2208" />
 
     <gap:splash src="ldpi.png" gap:platform="android" gap:density="ldpi" />
     <gap:splash src="mdpi.png" gap:platform="android" gap:density="mdpi" />
