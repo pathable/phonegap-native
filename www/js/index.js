@@ -87,15 +87,18 @@ var app = {
                     break;
                 case 'push-registration':
 
+                    app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+                    app.initPushwoosh();
+
                     app.pushNotification.registerDevice(
-                            function (status) {
-                                var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
-                                console.log("Registered for Push: ", route);
-                                app.postMessage({route: route}, '*');
-                            },
-                            function (status) {
-                                console.warn(JSON.stringify(['failed to register ', status]));
-                            }
+                        function (status) {
+                            var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
+                            console.log("Registered for Push: ", route);
+                            app.postMessage({route: route}, '*');
+                        },
+                        function (status) {
+                            console.warn(JSON.stringify(['failed to register ', status]));
+                        }
                     );
                     break;
                 case 'push-registration/badge-clear':
