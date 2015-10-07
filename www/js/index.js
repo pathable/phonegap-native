@@ -90,6 +90,7 @@ var app = {
                     app.pushNotification.registerDevice(
                             function (status) {
                                 var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
+                                console.log("Registered for Push: ", route);
                                 app.postMessage({route: route}, '*');
                             },
                             function (status) {
