@@ -82,7 +82,7 @@ var app = {
               pathable.postMessage({route: route}, '*');
             },
             function (status) {
-              console.error('[app] Failed to register for push notifications: ' status);
+              console.error('[app] Failed to register for push notifications: ', status);
             }
           );
           break;
