@@ -29,7 +29,8 @@ var app = {
 
     },
     initPushwoosh: function () {
-        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+        console.log('INIT PUSHWOOSH');
+        window.app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 
         //set push notifications handler
         document.addEventListener('push-notification', function (event) {
@@ -50,14 +51,14 @@ var app = {
                 ;
 
                 if (route)
-                    app.postMessage({route: route}, '*');
-                app.pushNotification.setApplicationIconBadgeNumber(0);
+                    window.app.postMessage({route: route}, '*');
+                window.app.pushNotification.setApplicationIconBadgeNumber(0);
             }
             alert(title);
         });
 
         //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
-        app.pushNotification.onDeviceReady({projectid: "602871635283", pw_appid: "16D5D-FC32C"});
+        window.app.pushNotification.onDeviceReady({projectid: "602871635283", pw_appid: "16D5D-FC32C"});
 
     },
     loadPage: function () {
