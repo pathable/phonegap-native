@@ -1,5 +1,6 @@
+var pushNotification;
+
 var app = {
-    pushNotification: null,
     // Application Constructor
     initialize: function () {
         navigator.splashscreen.show();
@@ -30,7 +31,7 @@ var app = {
     },
     initPushwoosh: function () {
         console.log('INIT PUSHWOOSH');
-        window.app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
+        pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 
         //set push notifications handler
         document.addEventListener('push-notification', function (event) {
@@ -52,21 +53,19 @@ var app = {
 
                 if (route)
                     window.app.postMessage({route: route}, '*');
-                window.app.pushNotification.setApplicationIconBadgeNumber(0);
+                pushNotification.setApplicationIconBadgeNumber(0);
             }
             alert(title);
         });
 
         //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
-        window.app.pushNotification.onDeviceReady({projectid: "602871635283", pw_appid: "16D5D-FC32C"});
-
+        pushNotification.onDeviceReady({projectid: "602871635283", pw_appid: "16D5D-FC32C"});
     },
     loadPage: function () {
         var $window = $(window);
         var $app = $('#application');
         var app = $app[0].contentWindow;
         var a = document.createElement('a');
-        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 
         $window.on("message", function (e) {
             var data = e.originalEvent.data;
@@ -89,8 +88,7 @@ var app = {
                     var inapp = cordova.InAppBrowser.open(url, '_blank', 'location=no,toolbarposition=top,closebuttoncaption=Close');
                     break;
                 case 'push-registration':
-
-                    app.pushNotification.registerDevice(
+                    pushNotification.registerDevice(
                         function (status) {
                             var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
                             console.log("Registered for Push: ", route);
@@ -102,7 +100,7 @@ var app = {
                     );
                     break;
                 case 'push-registration/badge-clear':
-                    app.pushNotification.setApplicationIconBadgeNumber(0);
+                    pushNotification.setApplicationIconBadgeNumber(0);
                     break;
                 case 'bar-codes/new':
                     cordova.plugins.barcodeScanner.scan(function (result) {
