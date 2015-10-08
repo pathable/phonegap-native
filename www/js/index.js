@@ -62,6 +62,8 @@ var app = {
         pushNotification.onDeviceReady({projectid: "602871635283", pw_appid: "16D5D-FC32C"});
     },
     loadPage: function () {
+        console.log('LOAD PAGE');
+
         var $window = $(window);
         var $app = $('#application');
         var app = $app[0].contentWindow;
@@ -88,6 +90,8 @@ var app = {
                     var inapp = cordova.InAppBrowser.open(url, '_blank', 'location=no,toolbarposition=top,closebuttoncaption=Close');
                     break;
                 case 'push-registration':
+                    pushNotification.initPushwoosh();
+
                     pushNotification.registerDevice(
                         function (status) {
                             var route = 'push-registrations/create/' + status['deviceToken'] + '/' + status['type'];
