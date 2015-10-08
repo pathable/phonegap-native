@@ -16,8 +16,8 @@ var app = {
     //
     // The scope of `this` is the event. In order to call the `receivedEvent`
     onDeviceReady: function () {
+        alert('READY');
         app.receivedEvent('deviceready');
-        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
         app.initPushwoosh();
         app.loadPage();
     },
@@ -29,9 +29,12 @@ var app = {
 
     },
     initPushwoosh: function () {
+        app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 
         //set push notifications handler
         document.addEventListener('push-notification', function (event) {
+            console.log('PUSH NOTIFICATION: ', event);
+
             var title = event.notification.title;
             var notification = JSON.parse(event.notification.title);
 
@@ -83,12 +86,8 @@ var app = {
                 case 'open-url':
                     var url = data.url;
                     var inapp = cordova.InAppBrowser.open(url, '_blank', 'location=no,toolbarposition=top,closebuttoncaption=Close');
-//                    window.open = cordova.ThemeableBrowser.open();
                     break;
                 case 'push-registration':
-
-                    app.pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
-                    app.initPushwoosh();
 
                     app.pushNotification.registerDevice(
                         function (status) {
