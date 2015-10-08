@@ -90,7 +90,7 @@ var app = {
                     var inapp = cordova.InAppBrowser.open(url, '_blank', 'location=no,toolbarposition=top,closebuttoncaption=Close');
                     break;
                 case 'push-registration':
-                    pushNotification.initPushwoosh();
+                    app.initPushwoosh();
 
                     pushNotification.registerDevice(
                         function (status) {
