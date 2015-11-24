@@ -30,42 +30,42 @@
     <preference name="StatusBarOverlaysWebView" value="true"/>
     <preference name="StatusBarBackgroundColor" value="#000000"/>
     <preference name="StatusBarStyle" value="blackopaque" />
-    
+
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="1000" />
     <preference name="FadeSplashScreen" value="true"/>
     <preference name="FadeSplashScreenDuration" value="2"/>
     <preference name="ShowSplashScreenSpinner" value="true"/>
     <preference name="AutoHideSplashScreen" value="false" />
-    
+
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
     <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
 
-    <!-- 
-    Must be precisely named and in root directory per 
-    http://docs.build.phonegap.com/en_US/2.9.0/configuring_icons_and_splash.md.html#Icons%20and%20Splash%20Screens 
+    <!--
+    Must be precisely named and in root directory per
+    http://docs.build.phonegap.com/en_US/2.9.0/configuring_icons_and_splash.md.html#Icons%20and%20Splash%20Screens
     See also https://github.com/phonegap/phonegap/wiki/App-Splash-Screen-Sizes
     -->
 
-    <icon src="icon.png" />
-    
-    <icon gap:platform="ios" src="icon.png" width="57" height="57" />
-    <icon gap:platform="ios" src="icon@2x.png" width="114" height="114" />
-    <icon gap:platform="ios" src="icon-72.png" width="72" height="72" />
-    <icon gap:platform="ios" src="icon-120.png" width="120" height="120" />
-    <icon gap:platform="ios" src="icon-144.png" width="144" height="144" />
-    <icon gap:platform="ios" src="icon-152.png" width="152" height="152" />
-    <icon gap:platform="ios" src="icon-180.png" width="180" height="180" />
-    <icon gap:platform="ios" src="icon-76.png" width="76" height="76" />
-    <icon gap:platform="ios" src="icon-60.png" width="60" height="60" />
-        
-    <icon gap:platform="android" gap:qualifier="ldpi" src="icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="icon-96-xhdpi.png" />
+    <icon src="icons/icon.png" />
+
+    <icon gap:platform="ios" src="icons/icon.png" width="57" height="57" />
+    <icon gap:platform="ios" src="icons/icon@2x.png" width="114" height="114" />
+    <icon gap:platform="ios" src="icons/icon-72.png" width="72" height="72" />
+    <icon gap:platform="ios" src="icons/icon-120.png" width="120" height="120" />
+    <icon gap:platform="ios" src="icons/icon-144.png" width="144" height="144" />
+    <icon gap:platform="ios" src="icons/icon-152.png" width="152" height="152" />
+    <icon gap:platform="ios" src="icons/icon-180.png" width="180" height="180" />
+    <icon gap:platform="ios" src="icons/icon-76.png" width="76" height="76" />
+    <icon gap:platform="ios" src="icons/icon-60.png" width="60" height="60" />
+
+    <icon gap:platform="android" gap:qualifier="ldpi" src="icons/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="icons/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="icons/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="icons/icon-96-xhdpi.png" />
 
     <gap:splash src="splash.png" />
 
@@ -89,9 +89,9 @@
     <gap:splash src="hdpi.png" gap:platform="android" gap:density="hdpi" />
     <gap:splash src="xhdpi.png" gap:platform="android" gap:density="xhdpi" />
     <gap:splash src="xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
-    
+
     <access origin="*" />
-    
+
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <!--<access origin="*.pushwoosh.com"/>-->
