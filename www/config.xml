@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pathable.pathablegc-test" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PhoneGap Test PGC2015</name>
+    <description>
+      Pathable PhoneGap
+    </description>
+    <author email="support@pathable.com" href="https://pathable.com/">
+      Pathable
+    </author>
+    <content src="index.html" />
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-minSdkVersion" value="10" />
+    <preference name="android-maxSdkVersion" value="22" />
+    <preference name="android-targetSdkVersion" value="17" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="blackopaque" />
+    <preference name="BackupWebStorage" value="local"/>
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
+    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+    <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
+    <icon src="res/icons/icon.png" />
+    <platform name="ios">
+        <icon height="57" src="res/icons/icon.png" width="57" />
+        <icon height="114" src="res/icons/icon@2x.png" width="114" />
+        <icon height="72" src="res/icons/icon-72.png" width="72" />
+        <icon height="120" src="res/icons/icon-120.png" width="120" />
+        <icon height="144" src="res/icons/icon-144.png" width="144" />
+        <icon height="152" src="res/icons/icon-152.png" width="152" />
+        <icon height="180" src="res/icons/icon-180.png" width="180" />
+        <icon height="76" src="res/icons/icon-76.png" width="76" />
+        <icon height="60" src="res/icons/icon-60.png" width="60" />
+        <splash height="480" src="res/splash/Default.png" width="320" />
+        <splash height="960" src="res/splash/Default@2x.png" width="640" />
+        <splash height="1136" src="res/splash/Default-568h@2x.png" width="640" />
+        <splash height="1024" src="res/splash/Default-Portrait.png" width="768" />
+        <splash height="768" src="res/splash/Default-Landscape.png" width="1024" />
+        <splash height="2048" src="res/splash/Default-Portrait@2x.png" width="1536" />
+        <splash height="1536" src="res/splash/Default-Landscape@2x.png" width="2048" />
+    </platform>
+    <platform name="android">
+        <icon qualifier="ldpi" src="res/icons/icon-36-ldpi.png" />
+        <icon qualifier="mdpi" src="res/icons/icon-48-mdpi.png" />
+        <icon qualifier="hdpi" src="res/icons/icon-72-hdpi.png" />
+        <icon qualifier="xhdpi" src="res/icons/icon-96-xhdpi.png" />
+        <splash density="ldpi" src="res/splash/ldpi.png" />
+        <splash density="mdpi" src="res/splash/mdpi.png" />
+        <splash density="hdpi" src="res/splash/hdpi.png" />
+        <splash density="xhdpi" src="res/splash/xhdpi.png" />
+        <splash density="xxhdpi" src="res/splash/xxhdpi.png" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="ios" spec="~3.9.2" />
+</widget>

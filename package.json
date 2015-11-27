@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "ios-deploy": "^1.8.3",
+    "phonegap": "^5.3.9"
+  }
+}
