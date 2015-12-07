@@ -71,6 +71,9 @@ var app = {
     $window.on("message", function(e) {
       var data = e.originalEvent.data;
       switch (data.route) {
+        case 'ready':
+          navigator.splashscreen.hide();
+          break;
         case 'reload':
           $window.scrollTop(0)
           app.location.reload(true);
@@ -137,7 +140,6 @@ var app = {
     $('#loading-container').addClass('hidden');
     setTimeout(function() {
       app.loadPage();
-      navigator.splashscreen.hide();
     }, 2000);
   }
 };
