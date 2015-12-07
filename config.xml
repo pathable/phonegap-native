@@ -1,13 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pathable.pathablegc-test" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>PhoneGap Test PGC2015</name>
+<widget id="com.pathable.rmsymposiumscottsdale2016" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>Symposium Scottsdale</name>
   <description>
-    Pathable PhoneGap
+    Rakuten Marketing Symposium Scottsdale
   </description>
   <author email="support@pathable.com" href="https://pathable.com/">
     Pathable
   </author>
   <content src="index.html" />
+  <gap:url-scheme role="Editor">
+    <scheme>rmsscottsdale</scheme>
+  </gap:url-scheme>
   <gap:platform name="ios" />
   <gap:platform name="android" />
   <preference name="orientation" value="default" />
