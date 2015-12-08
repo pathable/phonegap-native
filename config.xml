@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pathable.rmsymposiumscottsdale2016" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>Symposium Scottsdale</name>
+<widget id="com.pathable.summit2016" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>Summit 2016</name>
   <description>
-    Rakuten Marketing Symposium Scottsdale
+    The official app for U.S.-Africa Business Summit 2016
   </description>
   <author email="support@pathable.com" href="https://pathable.com/">
     Pathable
   </author>
   <content src="index.html" />
   <gap:url-scheme role="Editor">
-    <scheme>rmsscottsdale</scheme>
+    <scheme>summit2016</scheme>
   </gap:url-scheme>
   <gap:platform name="ios" />
   <gap:platform name="android" />
