@@ -33,6 +33,8 @@
   <preference name="StatusBarBackgroundColor" value="#000000" />
   <preference name="StatusBarStyle" value="blackopaque" />
   <preference name="BackupWebStorage" value="local"/>
+  <preference name="android-build-tool" value="gradle" />
+  <gap:plugin name="cordova-plugin-admobpro" source="npm" />
   <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="3.0.0" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
