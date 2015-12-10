@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.pathable.pathablegc2015-staging" version="1.6.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>PhoneGap Test PGC2015</name>
+  <name>Pathable GC 2015 Staging</name>
   <description>
-    Pathable PhoneGap
+    Pathable GC 2015 Staging
   </description>
   <author email="support@pathable.com" href="https://pathable.com/">
     Pathable
@@ -92,4 +92,7 @@
     <allow-intent href="itms-apps:*" />
   </platform>
   <engine name="ios" spec="~3.9.2" />
+  <url-scheme name="com.pathable.pathablegc2015-staging" role="Viewer">
+    <scheme>ptbls</scheme>
+  </url-scheme>
 </widget>
