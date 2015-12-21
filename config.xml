@@ -38,6 +38,9 @@
   <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="3.0.0" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
+  <gap:plugin name="cordova-plugin-customurlscheme" source="npm" version="4.1.0">
+    <param name="URL_SCHEME" value="ptbls" />
+  </gap:plugin>
   <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
   <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
   <icon src="res/icons/icon.png" />
@@ -92,7 +95,4 @@
     <allow-intent href="itms-apps:*" />
   </platform>
   <engine name="ios" spec="~3.9.2" />
-  <url-scheme name="com.pathable.pathablegc2015-staging" role="Viewer">
-    <scheme>ptbls</scheme>
-  </url-scheme>
 </widget>
