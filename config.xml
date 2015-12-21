@@ -38,7 +38,7 @@
   <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="3.0.0" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
-  <gap:plugin name="cordova-plugin-customurlscheme" source="npm" version="4.1.0">
+  <gap:plugin name="cordova-plugin-customurlscheme2" source="pgb" version="4.0.1">
     <param name="URL_SCHEME" value="ptbls" />
   </gap:plugin>
   <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
