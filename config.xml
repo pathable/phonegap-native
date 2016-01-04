@@ -10,7 +10,7 @@
   <content src="index.html" />
   <gap:platform name="ios" />
   <gap:platform name="android" />
-  <preference name="orientation" value="default" />
+  <prerence name="orientation" value="default" />
   <preference name="target-device" value="universal" />
   <preference name="fullscreen" value="true" />
   <preference name="webviewbounce" value="true" />
