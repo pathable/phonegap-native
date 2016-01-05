@@ -34,6 +34,9 @@
   <preference name="StatusBarStyle" value="blackopaque" />
   <preference name="BackupWebStorage" value="local"/>
   <preference name="android-build-tool" value="gradle" />
+  <preference name="StatusBarOverlaysWebView" value="false" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
+  <preference name="StatusBarStyle" value="lightcontent" />
   <gap:plugin name="cordova-plugin-admobpro" source="npm" />
   <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="3.0.0" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
@@ -44,6 +47,7 @@
   </gap:plugin>
   <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
   <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
+  <gap:plugin name="com.phonegap.plugin.statusbar" source="npm" />
   <icon src="res/icons/icon.png" />
   <splash width="320" height="480" src="res/splash/Default.png" />
   <platform name="ios">
