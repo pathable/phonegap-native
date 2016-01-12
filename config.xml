@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pathable.pathablegc2015-staging" version="1.6.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>Pathable GC 2015 Staging</name>
+<widget id="com.pathable.pathablegc2016-staging" version="1.6.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>Pathable GC 2016 Staging</name>
   <description>
-    Pathable GC 2015 Staging
+    Pathable GC 2016 Staging
   </description>
   <author email="support@pathable.com" href="https://pathable.com/">
     Pathable
@@ -42,8 +42,8 @@
   <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
   <gap:plugin name="cordova-plugin-customurlscheme2" source="pgb" version="4.0.1">
-    <param name="URL_SCHEME" value="ptbls" />
-    <param name="URL_SCHEME2" value="ptbls" />
+    <param name="URL_SCHEME"  value="ptblgc2016s" />
+    <param name="URL_SCHEME2" value="ptblgc2016s" />
   </gap:plugin>
   <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
   <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
