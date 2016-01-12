@@ -47,7 +47,7 @@
   </gap:plugin>
   <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
   <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" />
-  <gap:plugin name="com.phonegap.plugin.statusbar" source="npm" />
+  <gap:plugin name="com.phonegap.plugin.statusbar" />
   <icon src="res/icons/icon.png" />
   <splash width="320" height="480" src="res/splash/Default.png" />
   <platform name="ios">
